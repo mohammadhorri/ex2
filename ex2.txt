@@ -1,0 +1,32 @@
+ÈÑäÇãå Çí ˜å ÇÚÏÇÏ ÑÇ ÎæÇäÏå æ ãíÇäíä æ ÈÒÑÊÑíä æ ˜æ˜ÊÑíä ÑÇ äãÇíÔ ÏåÏ
+        System.out.print("Enter length of array:");
+        int length,j,sum=0,max,min,avg;
+        Scanner sc = new Scanner(System.in);
+        length=sc.nextInt();
+        int[] intArray ;
+        intArray = new int[length];
+        System.out.println("Enter namber:");
+          for(j=0;j<length;j++)
+           { 
+           intArray[j] = sc.nextInt();
+           System.out.print(String.format("[%d]:", j));
+           System.out.println(intArray[j]);
+           sum+=intArray[j];
+           }
+        avg=sum/2;
+        max=intArray[0];
+        min=intArray[0];
+          for(j=0;j<length;j++)
+           { 
+            if(intArray[j]>=max)
+             {
+              max=intArray[j];
+              }
+             if(intArray[j]<=min)
+              {
+               min=intArray[j];
+              }
+           }
+      System.out.println(String.format("avg of Array:%d", avg));
+      System.out.println(String.format("max of Array:%d", max));
+      System.out.println(String.format("min of Array:%d", min));
